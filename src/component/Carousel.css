@@ -1,0 +1,39 @@
+.carousel-container {
+    /* Container for padding and overflow */
+    padding: 20px; /* Adjust padding as needed */
+    overflow-x: scroll; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent content from wrapping */
+    display: flex;
+    margin: 10px;
+  }
+  
+  .carousel {
+    /* Existing styles remain the same */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; /* Adjust the gap between items */
+    padding: 10px;
+  }
+  
+  .carousel-item {
+    text-align: center;
+    /* Add background color and padding */
+    background-color: #f5f5f5; /* Adjust for desired background lightness */
+    padding: 10px; /* Optional padding around text */
+    border-radius: 5px; /* Optional rounded corners */
+    /* Existing styles remain the same */
+    display: flex; /* Allow stacking image and text vertically */
+    flex-direction: column; /* Align image and text vertically */
+    align-items: center; /* Center content horizontally within item */
+    gap: 10px; /* Add spacing between image and text */
+    max-width: 300px;
+  }
+  
+  
+  .carousel-item img {
+    /* Existing styles remain the same */
+    width: 200px; /* Set the width to your desired size */
+    height: auto;
+  }
+  

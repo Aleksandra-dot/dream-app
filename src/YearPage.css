@@ -1,0 +1,16 @@
+.year-page-container {
+  display: flex;
+  justify-content: center; /* Center elements horizontally */
+  align-items: center; /* Center elements vertically */
+  height: 90vh; /* Set container height to 100% viewport height */
+  background-color: #f0f0f0; /* Optional background color */
+  padding: 20px;
+}
+
+.year-overview-image {
+  max-width: 75%; /* Adjust image width as needed */
+  max-height: 75%; /* Adjust image height as needed */
+  /* Additional styles for centering the image */
+  margin: 0 auto; /* Center image horizontally */
+  object-fit: cover; /* Cover the available space while maintaining aspect ratio */
+}

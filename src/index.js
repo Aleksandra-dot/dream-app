@@ -1,13 +1,34 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import App from './App1';
 import reportWebVitals from './reportWebVitals';
+import Carousel from './component/Carousel'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import CarouselPage from './CarouselPage';
+import YearPage from './YearPage';
 
+const router = createBrowserRouter([
+  {
+    path:'/',
+    element: <App />
+  },
+  {
+    path: '/archive',
+    element: <CarouselPage />
+  },
+  {
+    path: '/year',
+    element: <YearPage/>
+  }
+  
+
+])
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 
